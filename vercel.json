@@ -11,8 +11,16 @@
     ],
     "routes": [
         {
-            "src": "/(.*)",
+            "src": "/events",
             "dest": "./index.js"
+        },
+        {
+          "src": "/events/:name",
+          "dest": "./index.js"
+        },
+        {
+          "src": "/",
+          "dest": "./index.js"
         }
     ]
 
