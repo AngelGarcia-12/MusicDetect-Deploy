@@ -1,7 +1,7 @@
 {
     "builds": [
         {
-            "src": "./public/index.html",
+            "src": "./index.js",
             "use": "@vercel/node"
         }
     ],
@@ -10,5 +10,10 @@
             "src": "/(.*)",
             "dest": "/"
         }
-    ]
+    ],
+    "env": {
+        "VITE_API_URL": "http://localhost:4000/api",
+        "PORT": "4000",
+        "DB_CNN": "mongodb+srv://mern_usermd:sTUD9qm1O8kUdJlK@musicdetectdb.lycrwep.mongodb.net/mern_md"
+    }
 }
